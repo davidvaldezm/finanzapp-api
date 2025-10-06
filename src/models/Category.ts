@@ -1,0 +1,11 @@
+import { Schema, model, Types } from 'mongoose';
+
+const categorySchema = new Schema({
+  userId: { type: Types.ObjectId, ref: 'User', required: true },
+  name: { type: String, required: true },
+  type: { type: String, enum: ['expense','income'], required: true },
+  icon: String,
+  color: String,
+}, { timestamps: true });
+
+export const Category = model('Category', categorySchema);
