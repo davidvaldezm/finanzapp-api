@@ -4,11 +4,10 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "lint": "echo \"(add eslint later)\""
-  },
+  "dev": "tsx src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js"
+},
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
