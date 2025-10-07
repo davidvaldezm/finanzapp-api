@@ -9,8 +9,9 @@ export const swaggerSpec = swaggerJsdoc({
       description: 'API documentation for FinanzApp (MVP)',
     },
     servers: [
-      { url: 'http://localhost:4000' }
+      { url: 'http://localhost:4000/api' }
     ],
   },
   apis: ['src/routes/*.ts'],
 });
+
